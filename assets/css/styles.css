@@ -90,38 +90,22 @@ image {
   margin: 15px 0;
 }
 
+.showcase-text .line {
+    margin-top: 50px;
+}
+
 
 .showcase-image {
   background-image: url('/images/image-intro-desktop.jpg');
-  margin-top: 80px;
+  margin-top: 50px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   height: 500px;
+  width: 80%;
 }
 
 
+ 
 
-/* Utilities */
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow: auto;
-  padding: 0 40px;
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  gap: 20px;
-  justify-content: center;
-  /* align-items: center; */
-}
