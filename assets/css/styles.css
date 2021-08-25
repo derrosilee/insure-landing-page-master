@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+  --primary-color: hsl(256, 26%, 20%);
+  --light-primary-color: hsl(216, 30%, 68%);
+  --neutral-color: hsl(270, 9%, 17%);
+  --snd-neutral-color: hsl(273, 4%, 51%);
+  --trd-neutral-color: hsl(0, 0%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 10px 0;
+  font-size: 25px;
+}
+
+p {
+  margin: 10px 0;
+  font-family: "Karla", sans-serif;
+}
+
+image {
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff;
+  color: var(--neutral-color);
+  height: 70px;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: var(--snd-neutral-color);
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  color: var(--neutral-color);
+}
+
+.navbar a:focus {
+  border: 2px solid var(--neutral-color);
+  padding: 6px 15px;
+  color: var(--trd-neutral-color);
+  background-color: var(--neutral-color);
+}
+
+/* Showcase */
+.showcase {
+  height: 400px;
+  background-color: var(--primary-color);
+  color: var(--trd-neutral-color);
+  position: relative;
+}
+
+.showcase h1 {
+  font-size: 60px;
+  line-height: 56px;
+  margin-top: 80px;
+}
+
+.showcase p {
+  margin: 15px 0;
+}
+
+
+.showcase-image {
+  background-image: url('/images/image-intro-desktop.jpg');
+  margin-top: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 500px;
+}
+
+
+
+/* Utilities */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 20px;
+  justify-content: center;
+  /* align-items: center; */
+}
